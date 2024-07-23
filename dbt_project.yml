@@ -30,20 +30,20 @@ clean-targets:         # directories to be removed by `dbt clean`
 # directory as views. These settings can be overridden in the individual model
 # files using the `{{ config(...) }}` macro.
 models:
-  projeto_bruno:
+  my_dbt_cloud:
     # Default settings for all models
     materialized: table
 
     # # Settings for models in the staging directory
     staging:
-      +schema: 'dev_cloud_bronze'
+      +schema: 'bronze_dev'
       +materialized: table
 
     # Settings for models in the intermediate directory
     intermediate:
-      +schema: 'dev_cloud_silver'
+      +schema: 'silver_dev'
       +materialized: table
     marts:
-      +schema: 'dev_cloud_gold'
+      +schema: 'gold_dev'
       +materialized: table
 
