@@ -30,7 +30,7 @@ clean-targets:         # directories to be removed by `dbt clean`
 # directory as views. These settings can be overridden in the individual model
 # files using the `{{ config(...) }}` macro.
 models:
-  projeto_bruno:
+  my_dbt_cloud:
     # Default settings for all models
     materialized: table
 
