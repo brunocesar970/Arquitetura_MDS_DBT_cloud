@@ -36,14 +36,14 @@ models:
 
     # # Settings for models in the staging directory
     staging:
-      +schema: 'dev_cloud_bronze'
+      +schema: 'bronze_dev'
       +materialized: table
 
     # Settings for models in the intermediate directory
     intermediate:
-      +schema: 'dev_cloud_silver'
+      +schema: 'silver_dev'
       +materialized: table
     marts:
-      +schema: 'dev_cloud_gold'
+      +schema: 'gold_dev'
       +materialized: table
 
