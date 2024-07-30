@@ -39,7 +39,7 @@ Este projeto implementa uma arquitetura de Modern Data Stack para ingestão, pro
 ### 1. Airbyte
 Configuração dos conectores para MySQL e MongoDB, e ingestão dos dados para o Snowflake no schema `lake_dev_raw`.
 
-### 2. dbt Core
+### 2. dbt Cloud
 Scripts de transformação para processar os dados das camadas Raw, Bronze, Silver e Gold no Snowflake.
 
 ### 3. Apache Airflow
